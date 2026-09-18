@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(morgan(env.nodeEnv === "production" ? "combined" : "dev"));
 
 app.get("/", (req, res) => {
-  res.json({ status: "ok", service: "taskflow-api", version: "2.0 - Despliegue automatico para Validar Andes  en tiempo REAL CI/CD" });
+  res.json({ status: "ok", service: "taskflow-api", version: "3.0 - Despliegue automatico para Validar Andes  en tiempo REAL CI/CD" });
 });
 app.use("/api", routes);
 app.use(notFound);
